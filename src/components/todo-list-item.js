@@ -3,7 +3,14 @@ const TodoListItem = ({ label, important = false }) => {
     color: important ? "tomato" : "black",
   };
 
-  return <span style={style}>{label}</span>;
+  return (
+    <div>
+      <span style={style}>{label}</span>
+
+      <button type="button">delete</button>
+      <button type="button">important</button>
+    </div>
+  );
 };
 
 export default TodoListItem;
