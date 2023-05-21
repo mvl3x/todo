@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <div>
-      <AppHeader />
+      <AppHeader toDo={1} done={2} />
       <SearchPanel />
       <TodoList todos={todoData} />
     </div>
